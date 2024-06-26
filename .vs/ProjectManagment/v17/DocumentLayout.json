@@ -7,12 +7,20 @@
       "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\views\\projects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\views\\projects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\models\\commentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,6 +55,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Projects\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProjectManagment\\Views\\Projects\\Index.cshtml",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Projects\\Index.cshtml",
+              "RelativeToolTip": "ProjectManagment\\Views\\Projects\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T10:24:59.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "ProjectManagment\\Controllers\\TaskController.cs",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "ProjectManagment\\Controllers\\TaskController.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAIA9wFUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T06:52:27.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "ProjectManagment\\Data\\ApplicationDbContext.cs",
@@ -54,8 +88,7 @@
               "RelativeToolTip": "ProjectManagment\\Data\\ApplicationDbContext.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAvwA0AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T08:05:25.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T08:05:25.618Z"
             },
             {
               "$type": "Document",
@@ -65,14 +98,14 @@
               "RelativeDocumentMoniker": "ProjectManagment\\Controllers\\ProjectController.cs",
               "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Controllers\\ProjectController.cs",
               "RelativeToolTip": "ProjectManagment\\Controllers\\ProjectController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-22T07:34:51.796Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "CommentModel.cs",
               "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\CommentModel.cs",
               "RelativeDocumentMoniker": "ProjectManagment\\Models\\CommentModel.cs",
@@ -80,38 +113,36 @@
               "RelativeToolTip": "ProjectManagment\\Models\\CommentModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T07:07:25.709Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T07:07:25.709Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TaskModel.cs",
               "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\TaskModel.cs",
               "RelativeDocumentMoniker": "ProjectManagment\\Models\\TaskModel.cs",
               "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\TaskModel.cs",
               "RelativeToolTip": "ProjectManagment\\Models\\TaskModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-22T07:04:09.417Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ProjectModel.cs",
               "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\ProjectModel.cs",
               "RelativeDocumentMoniker": "ProjectManagment\\Models\\ProjectModel.cs",
               "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\ProjectModel.cs",
               "RelativeToolTip": "ProjectManagment\\Models\\ProjectModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T06:44:29.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T06:44:29.648Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "UserModel.cs",
               "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\UserModel.cs",
               "RelativeDocumentMoniker": "ProjectManagment\\Models\\UserModel.cs",
@@ -119,8 +150,7 @@
               "RelativeToolTip": "ProjectManagment\\Models\\UserModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T06:43:13.495Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T06:43:13.495Z"
             }
           ]
         }
