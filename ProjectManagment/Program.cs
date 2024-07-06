@@ -1,3 +1,5 @@
+using ProjectManagment.Data;
+
 namespace ProjectManagment
 {
     public class Program
@@ -8,6 +10,9 @@ namespace ProjectManagment
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            //Add db based on Dbcontext
+            builder.Services.AddDbContext<ApplicationDbContext>();
+
 
             var app = builder.Build();
 

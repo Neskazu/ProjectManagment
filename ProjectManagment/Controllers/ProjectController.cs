@@ -25,12 +25,18 @@ namespace ProjectManagment.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([Bind("Name,Description")] ProjectModel project)
         {
+            project.OwnerId = 1;
             if (ModelState.IsValid)
             {
                 project.OwnerId = 1/* current user id */;
                 context.Add(project);
                 await context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
+            }
+            var errors = ModelState.Values.SelectMany(v => v.Errors);
+            foreach (var error in errors)
+            {
+                Console.WriteLine(error.ErrorMessage);
             }
             return View(project);
         }

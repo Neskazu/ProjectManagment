@@ -1,9 +1,11 @@
-﻿using System.Xml.Linq;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Xml.Linq;
 
 namespace ProjectManagment.Models
 {
     public class TaskModel
     {
+        [Key]
         public required int Id { get; set; }
         public required string Title { get; set; }
         public string? Description { get; set; }
@@ -13,7 +15,7 @@ namespace ProjectManagment.Models
         public required ProjectModel Project { get; set; }
         public int? AssignedUserId { get; set; }
         public UserModel? AssignedUser { get; set; }
-        public ICollection<CommentModel> Comments { get; set; }
+        public ICollection<CommentModel> Comments { get; set; } = new List<CommentModel>();
     }
     public enum TaskStatus
     {

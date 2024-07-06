@@ -7,24 +7,8 @@
       "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\views\\projects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\views\\projects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\models\\commentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\models\\commentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Repo\\ProjectManagment\\ProjectManagment\\Migrations\\20240706075611_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjectManagment\\Migrations\\20240706075611_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\models\\projectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,6 +17,70 @@
     {
       "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Repo\\ProjectManagment\\ProjectManagment\\Migrations\\20240706074911_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjectManagment\\Migrations\\20240706074911_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Repo\\ProjectManagment\\ProjectManagment\\Migrations\\20240706074623_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjectManagment\\Migrations\\20240706074623_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Repo\\ProjectManagment\\ProjectManagment\\Migrations\\20240706074146_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjectManagment\\Migrations\\20240706074146_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\views\\project\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\views\\project\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\views\\project\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\views\\project\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\views\\project\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\views\\project\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\views\\project\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\views\\project\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\views\\project\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\views\\project\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\models\\commentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\models\\commentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\projectmanagment.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\projectmanagment.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,40 +103,93 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "20240706075611_initial.cs",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Migrations\\20240706075611_initial.cs",
+              "RelativeDocumentMoniker": "ProjectManagment\\Migrations\\20240706075611_initial.cs",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Migrations\\20240706075611_initial.cs",
+              "RelativeToolTip": "ProjectManagment\\Migrations\\20240706075611_initial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T07:56:11.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Project\\Create.cshtml",
+              "RelativeDocumentMoniker": "ProjectManagment\\Views\\Project\\Create.cshtml",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Project\\Create.cshtml",
+              "RelativeToolTip": "ProjectManagment\\Views\\Project\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-06T07:20:33.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Program.cs",
+              "RelativeDocumentMoniker": "ProjectManagment\\Program.cs",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Program.cs",
+              "RelativeToolTip": "ProjectManagment\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T05:28:49.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\appsettings.json",
+              "RelativeDocumentMoniker": "ProjectManagment\\appsettings.json",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\appsettings.json",
+              "RelativeToolTip": "ProjectManagment\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-05T05:23:43.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Projects\\Index.cshtml",
-              "RelativeDocumentMoniker": "ProjectManagment\\Views\\Projects\\Index.cshtml",
-              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Projects\\Index.cshtml",
-              "RelativeToolTip": "ProjectManagment\\Views\\Projects\\Index.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAfAAAA",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Project\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProjectManagment\\Views\\Project\\Index.cshtml",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Project\\Index.cshtml",
+              "RelativeToolTip": "ProjectManagment\\Views\\Project\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-25T10:24:59.251Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
               "Title": "TaskController.cs",
               "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Controllers\\TaskController.cs",
               "RelativeDocumentMoniker": "ProjectManagment\\Controllers\\TaskController.cs",
               "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Controllers\\TaskController.cs",
               "RelativeToolTip": "ProjectManagment\\Controllers\\TaskController.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAIA9wFUAAAArAAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAhwEUAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T06:52:27.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "ProjectManagment\\Data\\ApplicationDbContext.cs",
               "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "ProjectManagment\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAvwA0AAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T08:05:25.618Z"
+              "WhenOpened": "2024-06-22T08:05:25.618Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -98,59 +199,166 @@
               "RelativeDocumentMoniker": "ProjectManagment\\Controllers\\ProjectController.cs",
               "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Controllers\\ProjectController.cs",
               "RelativeToolTip": "ProjectManagment\\Controllers\\ProjectController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA+AAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA4wCIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-22T07:34:51.796Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CommentModel.cs",
-              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\CommentModel.cs",
-              "RelativeDocumentMoniker": "ProjectManagment\\Models\\CommentModel.cs",
-              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\CommentModel.cs",
-              "RelativeToolTip": "ProjectManagment\\Models\\CommentModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA2AAAA",
+              "DocumentIndex": 4,
+              "Title": "20240706074911_initial.cs",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Migrations\\20240706074911_initial.cs",
+              "RelativeDocumentMoniker": "ProjectManagment\\Migrations\\20240706074911_initial.cs",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Migrations\\20240706074911_initial.cs",
+              "RelativeToolTip": "ProjectManagment\\Migrations\\20240706074911_initial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T07:07:25.709Z"
+              "WhenOpened": "2024-07-06T07:49:11.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProjectModel.cs",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\ProjectModel.cs",
+              "RelativeDocumentMoniker": "ProjectManagment\\Models\\ProjectModel.cs",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\ProjectModel.cs",
+              "RelativeToolTip": "ProjectManagment\\Models\\ProjectModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T06:44:29.648Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "ProjectManagment\\Models\\UserModel.cs",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\UserModel.cs",
+              "RelativeToolTip": "ProjectManagment\\Models\\UserModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T06:43:13.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Project\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ProjectManagment\\Views\\Project\\Edit.cshtml",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Project\\Edit.cshtml",
+              "RelativeToolTip": "ProjectManagment\\Views\\Project\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-06T07:22:37.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20240706074623_initial.cs",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Migrations\\20240706074623_initial.cs",
+              "RelativeDocumentMoniker": "ProjectManagment\\Migrations\\20240706074623_initial.cs",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Migrations\\20240706074623_initial.cs",
+              "RelativeToolTip": "ProjectManagment\\Migrations\\20240706074623_initial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T07:46:23.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20240706074146_initial.cs",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Migrations\\20240706074146_initial.cs",
+              "RelativeDocumentMoniker": "ProjectManagment\\Migrations\\20240706074146_initial.cs",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Migrations\\20240706074146_initial.cs",
+              "RelativeToolTip": "ProjectManagment\\Migrations\\20240706074146_initial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T07:41:46.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Project\\Details.cshtml",
+              "RelativeDocumentMoniker": "ProjectManagment\\Views\\Project\\Details.cshtml",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Project\\Details.cshtml",
+              "RelativeToolTip": "ProjectManagment\\Views\\Project\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-06T07:23:04.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Project\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ProjectManagment\\Views\\Project\\Delete.cshtml",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Project\\Delete.cshtml",
+              "RelativeToolTip": "ProjectManagment\\Views\\Project\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-06T07:23:23.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ProjectManagment\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ProjectManagment\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACwAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-06T07:27:37.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "TaskModel.cs",
               "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\TaskModel.cs",
               "RelativeDocumentMoniker": "ProjectManagment\\Models\\TaskModel.cs",
               "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\TaskModel.cs",
               "RelativeToolTip": "ProjectManagment\\Models\\TaskModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-22T07:04:09.417Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProjectModel.cs",
-              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\ProjectModel.cs",
-              "RelativeDocumentMoniker": "ProjectManagment\\Models\\ProjectModel.cs",
-              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\ProjectModel.cs",
-              "RelativeToolTip": "ProjectManagment\\Models\\ProjectModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAfAAAA",
+              "DocumentIndex": 14,
+              "Title": "CommentModel.cs",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\CommentModel.cs",
+              "RelativeDocumentMoniker": "ProjectManagment\\Models\\CommentModel.cs",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\CommentModel.cs",
+              "RelativeToolTip": "ProjectManagment\\Models\\CommentModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T06:44:29.648Z"
+              "WhenOpened": "2024-06-22T07:07:25.709Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserModel.cs",
-              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\UserModel.cs",
-              "RelativeDocumentMoniker": "ProjectManagment\\Models\\UserModel.cs",
-              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Models\\UserModel.cs",
-              "RelativeToolTip": "ProjectManagment\\Models\\UserModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T06:43:13.495Z"
+              "DocumentIndex": 17,
+              "Title": "ProjectManagment.csproj",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\ProjectManagment.csproj",
+              "RelativeDocumentMoniker": "ProjectManagment\\ProjectManagment.csproj",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\ProjectManagment.csproj",
+              "RelativeToolTip": "ProjectManagment\\ProjectManagment.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-05T05:37:53.267Z",
+              "EditorCaption": ""
             }
           ]
         }

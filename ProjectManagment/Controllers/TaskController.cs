@@ -25,7 +25,7 @@ namespace ProjectManagment.Controllers
             {
                 return NotFound();
             }
-            var task = await context.Tasks
+            var task = await context.TaskModels
                 .Include(t => t.Project)
                 .Include(t => t.AssignedUser)
                 .FirstOrDefaultAsync(t => t.Id == id);
@@ -59,7 +59,7 @@ namespace ProjectManagment.Controllers
             {
                 return NotFound();
             }
-            var task = await context.Tasks.FindAsync(id);
+            var task = await context.TaskModels.FindAsync(id);
             if(task == null) 
             {
                 return NotFound();
@@ -99,7 +99,7 @@ namespace ProjectManagment.Controllers
 
         private bool TaskExist(int id)
         {
-            return context.Tasks.Any(t => t.Id == id);
+            return context.TaskModels.Any(t => t.Id == id);
         }
     }
 }

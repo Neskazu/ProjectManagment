@@ -7,6 +7,6 @@
         public required string Email { get; set; }
         public required string PasswordHash { get; set; }
         public ICollection<ProjectModel>? Projects { get; set; }
-        public ICollection<TaskModel>? Tasks { get; set; }
+        public ICollection<TaskModel>? TasksModels { get; set; }
     }
 }
