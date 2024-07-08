@@ -35,22 +35,29 @@ namespace ProjectManagment.Controllers
             }
             return View(task);
         }
-        [HttpGet]
-        public IActionResult Create() 
-        {
-            return View();
-        }
         [HttpPost]
-        public async Task<IActionResult> Create([Bind("Title,Description,Deadline,ProjectId,AssignedUserId")] TaskModel task)
+        public async Task<IActionResult> Create([Bind("Title,Description,Deadline,Status,ProjectId")] TaskModel task)
         {
-            if (ModelState.IsValid) 
+            if (ModelState.IsValid)
             {
-                task.Status = Models.TaskStatus.New;
-                context.Add(task);
+                context.TaskModels.Add(task);
                 await context.SaveChangesAsync();
-                return RedirectToAction("Index");
+                return RedirectToAction("Details", "Project", new { id = task.ProjectId });
             }
-            return View(task);
+            else
+            {
+                // Log ModelState errors
+                foreach (var modelState in ModelState.Values)
+                {
+                    foreach (var error in modelState.Errors)
+                    {
+                        // You can use your preferred logging mechanism here.
+                        Console.WriteLine(error.ErrorMessage);
+                    }
+                }
+            }
+            ViewBag.ProjectId = task.ProjectId;
+            return RedirectToAction("Details", "Project", new { id = task.ProjectId });
         }
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)

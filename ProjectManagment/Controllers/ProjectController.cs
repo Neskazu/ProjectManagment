@@ -25,7 +25,6 @@ namespace ProjectManagment.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([Bind("Name,Description")] ProjectModel project)
         {
-            project.OwnerId = 1;
             if (ModelState.IsValid)
             {
                 project.OwnerId = 1/* current user id */;
@@ -109,7 +108,24 @@ namespace ProjectManagment.Controllers
             await context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        [HttpGet]
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
 
+            var project = await context.Projects
+                .Include(p => p.TaskModels)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (project == null)
+            {
+                return NotFound();
+            }
+
+            return View(project);
+        }
         private bool ProjectExists(int id)
         {
             return context.Projects.Any(e => e.Id == id);
