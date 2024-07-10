@@ -42,7 +42,7 @@ namespace ProjectManagment.Controllers
             {
                 context.TaskModels.Add(task);
                 await context.SaveChangesAsync();
-                return RedirectToAction("Details", "Project", new { id = task.ProjectId });
+                return RedirectToAction("Details", "Project", new { id = task?.ProjectId });
             }
             else
             {
@@ -57,7 +57,7 @@ namespace ProjectManagment.Controllers
                 }
             }
             ViewBag.ProjectId = task.ProjectId;
-            return RedirectToAction("Details", "Project", new { id = task.ProjectId });
+            return RedirectToAction("Details", "Project", new { id = task?.ProjectId });
         }
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
@@ -71,6 +71,7 @@ namespace ProjectManagment.Controllers
             {
                 return NotFound();
             }
+            ViewBag.ProjectId = task.ProjectId;
             return View(task);
         }
         [HttpPost]
@@ -103,7 +104,23 @@ namespace ProjectManagment.Controllers
             }
             return View(task);
         }
+        [HttpGet]
+        public IActionResult DeleteTaskModal(int taskId, string taskTitle)
+        {
+            return ViewComponent("DeleteTask", new { taskId = taskId, taskTitle = taskTitle });
+        }
 
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var task = await context.TaskModels.FindAsync(id);
+            if (task != null)
+            {
+                context.TaskModels.Remove(task);
+                await context.SaveChangesAsync();
+            }
+            return RedirectToAction("Details", "Project", new { id = task?.ProjectId });
+        }
         private bool TaskExist(int id)
         {
             return context.TaskModels.Any(t => t.Id == id);

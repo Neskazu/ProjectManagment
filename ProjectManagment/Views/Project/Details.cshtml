@@ -27,8 +27,8 @@
                 <td>@task.Deadline</td>
                 <td>@task.Status</td>
                 <td>
-                    <a asp-controller="Task" asp-action="Edit" asp-route-id="@task.Id">Edit</a> |
-                    <a asp-controller="Task" asp-action="Delete" asp-route-id="@task.Id">Delete</a>
+                    <a asp-controller="Task" asp-action="Edit" asp-route-id="@task.Id" class="btn btn-info">Edit</a> 
+                    <button class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" data-task-id="@task.Id" data-task-title="@task.Title">Delete</button>
                 </td>
             </tr>
         }
@@ -47,8 +47,38 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
+@* Render DeleteTaskConfirmation ViewComponent *@
+<div id="deleteTaskComponent">
+    @await Component.InvokeAsync("DeleteTask", new { taskId = 0, taskTitle = "" })
+</div>
+
 @section Scripts {
     @{
+        <script>
+            $(document).ready(function () {
+                $('.btn-danger').click(function (event) {
+                    var button = $(this);
+                    var taskId = button.data('task-id');
+                    var taskTitle = button.data('task-title');
+
+                    // set data for modal view
+                    $('#taskTitle').text(taskTitle);
+                    $('#taskId').val(taskId);
+
+                    // Load modal view by ajax
+                    $.ajax({
+                        url: '/Task/DeleteTaskModal',
+                        type: 'GET',
+                        data: { taskId: taskId, taskTitle: taskTitle },
+                        success: function (result) {
+                            $('#deleteTaskComponent').html(result);
+                            $('#deleteModal').modal('show');
+                        }
+                    });
+                });
+            });
+        </script>
+
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
