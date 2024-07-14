@@ -1,11 +1,10 @@
-﻿namespace ProjectManagment.Models
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
+
+namespace ProjectManagment.Models
 {
-    public class UserModel
+    public class UserModel:IdentityUser
     {
-        public required int Id { get; set; }
-        public required string UserName { get; set; }
-        public required string Email { get; set; }
-        public required string PasswordHash { get; set; }
         public ICollection<ProjectModel>? Projects { get; set; }
         public ICollection<TaskModel>? TasksModels { get; set; }
     }

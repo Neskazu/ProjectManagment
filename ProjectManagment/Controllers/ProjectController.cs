@@ -1,21 +1,29 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProjectManagment.Data;
 using ProjectManagment.Models;
 
 namespace ProjectManagment.Controllers
 {
+    [Authorize]
     public class ProjectController : Controller
     {
 
         private readonly ApplicationDbContext context;
-        public ProjectController(ApplicationDbContext context)
+        private readonly UserManager<UserModel> userManager;
+        public ProjectController(ApplicationDbContext context, UserManager<UserModel> userManager)
         {
             this.context = context;
+            this.userManager = userManager;
         }
         public async Task<IActionResult> Index()
         {
-            var projects = await context.Projects.Include(p=>p.Owner).ToListAsync();
+            var userId = userManager.GetUserId(User);
+            var projects = await context.Projects
+                                        .Where(p => p.OwnerId == userId)
+                                        .ToListAsync();
             return View(projects);
         }
         public IActionResult Create()
@@ -27,8 +35,9 @@ namespace ProjectManagment.Controllers
         {
             if (ModelState.IsValid)
             {
-                project.OwnerId = 1/* current user id */;
+                project.OwnerId = userManager.GetUserId(User);/* current user id */;
                 context.Add(project);
+                Console.WriteLine("Ownerid: "+project.OwnerId);
                 await context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }

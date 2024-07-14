@@ -8,7 +8,7 @@ namespace ProjectManagment.Models
         public required int Id { get; set; }
         public required string Name { get; set; }
         public string? Description { get; set; }
-        public int OwnerId { get; set; }
+        public string? OwnerId { get; set; }
         public UserModel? Owner { get; set; }
         public ICollection<TaskModel>? TaskModels { get; set; }
 

@@ -1,12 +1,12 @@
 ﻿using ProjectManagment.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace ProjectManagment.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<UserModel>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options){}
-        public DbSet<UserModel> Users { get; set; }
         public DbSet<ProjectModel> Projects { get; set; }
         public DbSet<TaskModel> TaskModels { get; set; }
         public DbSet<CommentModel> Comments { get; set; }

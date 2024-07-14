@@ -7,6 +7,9 @@ F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\ProjectManagment.runt
 F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\ProjectManagment.dll
 F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\ProjectManagment.pdb
 F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\Humanizer.dll
+F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -17,6 +20,9 @@ F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\Microsoft.EntityFrame
 F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\Mono.TextTemplating.dll
 F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\Npgsql.dll
 F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
@@ -26,6 +32,7 @@ F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\System.Composition.Co
 F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\System.Composition.Hosting.dll
 F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\System.Composition.Runtime.dll
 F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\System.Composition.TypedParts.dll
+F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\System.Text.Json.dll
 F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
 F:\Repo\ProjectManagment\ProjectManagment\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll

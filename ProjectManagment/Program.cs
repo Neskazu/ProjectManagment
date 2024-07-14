@@ -1,4 +1,6 @@
+using Microsoft.AspNetCore.Identity;
 using ProjectManagment.Data;
+using ProjectManagment.Models;
 
 namespace ProjectManagment
 {
@@ -13,7 +15,21 @@ namespace ProjectManagment
             //Add db based on Dbcontext
             builder.Services.AddDbContext<ApplicationDbContext>();
 
-
+            // add identity based on UserModel
+            builder.Services.AddIdentity<UserModel, IdentityRole>(options =>
+            {
+                options.SignIn.RequireConfirmedPhoneNumber = false;
+                options.SignIn.RequireConfirmedEmail = false;
+                options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequiredLength = 6;
+                options.SignIn.RequireConfirmedAccount = false;
+            })
+            .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddDefaultTokenProviders();
+            builder.Services.AddControllersWithViews();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -29,6 +45,7 @@ namespace ProjectManagment
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(
