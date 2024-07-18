@@ -11,6 +11,7 @@ namespace ProjectManagment.Models
         public string? OwnerId { get; set; }
         public UserModel? Owner { get; set; }
         public ICollection<TaskModel>? TaskModels { get; set; }
+        public ICollection<ProjectUser> ProjectUsers { get; set; } = new List<ProjectUser>();
 
     }
 }

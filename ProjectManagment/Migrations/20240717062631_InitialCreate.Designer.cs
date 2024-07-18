@@ -12,7 +12,7 @@ using ProjectManagment.Data;
 namespace ProjectManagment.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240714065332_InitialCreate")]
+    [Migration("20240717062631_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -216,6 +216,24 @@ namespace ProjectManagment.Migrations
                     b.ToTable("Projects");
                 });
 
+            modelBuilder.Entity("ProjectManagment.Models.ProjectUser", b =>
+                {
+                    b.Property<int>("ProjectId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("text");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("integer");
+
+                    b.HasKey("ProjectId", "UserId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("ProjectUsers");
+                });
+
             modelBuilder.Entity("ProjectManagment.Models.TaskModel", b =>
                 {
                     b.Property<int>("Id")
@@ -223,9 +241,6 @@ namespace ProjectManagment.Migrations
                         .HasColumnType("integer");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("AssignedUserId")
-                        .HasColumnType("text");
 
                     b.Property<DateTime?>("Deadline")
                         .HasColumnType("timestamp with time zone");
@@ -242,13 +257,31 @@ namespace ProjectManagment.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("text");
 
-                    b.HasKey("Id");
+                    b.Property<string>("UserModelId")
+                        .HasColumnType("text");
 
-                    b.HasIndex("AssignedUserId");
+                    b.HasKey("Id");
 
                     b.HasIndex("ProjectId");
 
+                    b.HasIndex("UserModelId");
+
                     b.ToTable("TaskModels");
+                });
+
+            modelBuilder.Entity("ProjectManagment.Models.TaskUser", b =>
+                {
+                    b.Property<int>("TaskId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("text");
+
+                    b.HasKey("TaskId", "UserId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("TaskUsers");
                 });
 
             modelBuilder.Entity("ProjectManagment.Models.UserModel", b =>
@@ -394,36 +427,80 @@ namespace ProjectManagment.Migrations
                     b.Navigation("Owner");
                 });
 
+            modelBuilder.Entity("ProjectManagment.Models.ProjectUser", b =>
+                {
+                    b.HasOne("ProjectManagment.Models.ProjectModel", "Project")
+                        .WithMany("ProjectUsers")
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProjectManagment.Models.UserModel", "User")
+                        .WithMany("ProjectUsers")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Project");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("ProjectManagment.Models.TaskModel", b =>
                 {
-                    b.HasOne("ProjectManagment.Models.UserModel", "AssignedUser")
-                        .WithMany("TasksModels")
-                        .HasForeignKey("AssignedUserId");
-
                     b.HasOne("ProjectManagment.Models.ProjectModel", "Project")
                         .WithMany("TaskModels")
                         .HasForeignKey("ProjectId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("AssignedUser");
+                    b.HasOne("ProjectManagment.Models.UserModel", null)
+                        .WithMany("TasksModels")
+                        .HasForeignKey("UserModelId");
 
                     b.Navigation("Project");
                 });
 
+            modelBuilder.Entity("ProjectManagment.Models.TaskUser", b =>
+                {
+                    b.HasOne("ProjectManagment.Models.TaskModel", "Task")
+                        .WithMany("TaskUsers")
+                        .HasForeignKey("TaskId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProjectManagment.Models.UserModel", "User")
+                        .WithMany("TaskUsers")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Task");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("ProjectManagment.Models.ProjectModel", b =>
                 {
+                    b.Navigation("ProjectUsers");
+
                     b.Navigation("TaskModels");
                 });
 
             modelBuilder.Entity("ProjectManagment.Models.TaskModel", b =>
                 {
                     b.Navigation("Comments");
+
+                    b.Navigation("TaskUsers");
                 });
 
             modelBuilder.Entity("ProjectManagment.Models.UserModel", b =>
                 {
+                    b.Navigation("ProjectUsers");
+
                     b.Navigation("Projects");
+
+                    b.Navigation("TaskUsers");
 
                     b.Navigation("TasksModels");
                 });

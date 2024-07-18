@@ -27,7 +27,6 @@ namespace ProjectManagment.Controllers
             }
             var task = await context.TaskModels
                 .Include(t => t.Project)
-                .Include(t => t.AssignedUser)
                 .FirstOrDefaultAsync(t => t.Id == id);
             if (task == null) 
             {

@@ -7,5 +7,7 @@ namespace ProjectManagment.Models
     {
         public ICollection<ProjectModel>? Projects { get; set; }
         public ICollection<TaskModel>? TasksModels { get; set; }
+        public ICollection<ProjectUser> ProjectUsers { get; set; } = new List<ProjectUser>();
+        public ICollection<TaskUser> TaskUsers { get; set; } = new List<TaskUser>();
     }
 }

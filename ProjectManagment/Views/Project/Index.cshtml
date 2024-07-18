@@ -36,8 +36,43 @@
                     <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-secondary">Edit</a>
                     <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a>
                     <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                    <button class="btn btn-primary invite-user-btn" data-project-id="@item.Id" data-project-name="@item.Name">Invite User</button>
+
                 </td>
             </tr>
         }
     </tbody>
 </table>
+@* Render InviteUser ViewComponent *@
+<div id="inviteUserComponent">
+    @await Component.InvokeAsync("InviteUser", new { projectId = 0, projectName = "" })
+</div>
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('.invite-user-btn').click(function (event) {
+                var button = $(this);
+                var projectId = button.data('project-id');
+                var projectName = button.data('project-name');
+
+                // Логируем данные для проверки
+                console.log("projectId: " + projectId);
+                console.log("projectName: " + projectName);
+                // set data for modal view
+                $('#projectName').text(projectName);
+                $('#projectId').val(projectId);
+
+                // Загрузка содержимого модального окна через AJAX
+                $.ajax({
+                    url: '/Project/InviteUserModal',
+                    type: 'GET',
+                    data: { projectId: projectId, projectName: projectName },
+                    success: function (result) {
+                        $('#inviteUserComponent').html(result);
+                        $('#inviteUserModal').modal('show');
+                    }
+                });
+            });
+        });
+    </script>
+}

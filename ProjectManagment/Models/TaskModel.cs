@@ -30,8 +30,7 @@ namespace ProjectManagment.Models
         public TaskStatus Status { get; set; }
         public required int ProjectId { get; set; }
         public ProjectModel? Project { get; set; }
-        public string? AssignedUserId { get; set; }
-        public UserModel? AssignedUser { get; set; }
+        public ICollection<TaskUser>? TaskUsers { get; set; }
         public ICollection<CommentModel> Comments { get; set; } = new List<CommentModel>();
     }
     public enum TaskStatus

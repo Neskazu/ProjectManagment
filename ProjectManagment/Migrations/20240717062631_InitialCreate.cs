@@ -178,6 +178,31 @@ namespace ProjectManagment.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "ProjectUsers",
+                columns: table => new
+                {
+                    ProjectId = table.Column<int>(type: "integer", nullable: false),
+                    UserId = table.Column<string>(type: "text", nullable: false),
+                    Role = table.Column<int>(type: "integer", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ProjectUsers", x => new { x.ProjectId, x.UserId });
+                    table.ForeignKey(
+                        name: "FK_ProjectUsers_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_ProjectUsers_Projects_ProjectId",
+                        column: x => x.ProjectId,
+                        principalTable: "Projects",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "TaskModels",
                 columns: table => new
                 {
@@ -188,14 +213,14 @@ namespace ProjectManagment.Migrations
                     Deadline = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
                     Status = table.Column<int>(type: "integer", nullable: false),
                     ProjectId = table.Column<int>(type: "integer", nullable: false),
-                    AssignedUserId = table.Column<string>(type: "text", nullable: true)
+                    UserModelId = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_TaskModels", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_TaskModels_AspNetUsers_AssignedUserId",
-                        column: x => x.AssignedUserId,
+                        name: "FK_TaskModels_AspNetUsers_UserModelId",
+                        column: x => x.UserModelId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id");
                     table.ForeignKey(
@@ -230,6 +255,30 @@ namespace ProjectManagment.Migrations
                     table.ForeignKey(
                         name: "FK_Comments_TaskModels_TaskModelsId",
                         column: x => x.TaskModelsId,
+                        principalTable: "TaskModels",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "TaskUsers",
+                columns: table => new
+                {
+                    TaskId = table.Column<int>(type: "integer", nullable: false),
+                    UserId = table.Column<string>(type: "text", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TaskUsers", x => new { x.TaskId, x.UserId });
+                    table.ForeignKey(
+                        name: "FK_TaskUsers_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_TaskUsers_TaskModels_TaskId",
+                        column: x => x.TaskId,
                         principalTable: "TaskModels",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -288,14 +337,24 @@ namespace ProjectManagment.Migrations
                 column: "OwnerId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_TaskModels_AssignedUserId",
-                table: "TaskModels",
-                column: "AssignedUserId");
+                name: "IX_ProjectUsers_UserId",
+                table: "ProjectUsers",
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_TaskModels_ProjectId",
                 table: "TaskModels",
                 column: "ProjectId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_TaskModels_UserModelId",
+                table: "TaskModels",
+                column: "UserModelId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_TaskUsers_UserId",
+                table: "TaskUsers",
+                column: "UserId");
         }
 
         /// <inheritdoc />
@@ -318,6 +377,12 @@ namespace ProjectManagment.Migrations
 
             migrationBuilder.DropTable(
                 name: "Comments");
+
+            migrationBuilder.DropTable(
+                name: "ProjectUsers");
+
+            migrationBuilder.DropTable(
+                name: "TaskUsers");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
