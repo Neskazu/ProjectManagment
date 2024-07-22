@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\views\\shared\\components\\inviteuser\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\views\\shared\\components\\inviteuser\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\views\\project\\projectuserspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\views\\project\\projectuserspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\views\\shared\\components\\deletetask\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\views\\shared\\components\\deletetask\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\views\\project\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\views\\project\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,62 +34,41 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjectUsersPartial.cshtml",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Project\\ProjectUsersPartial.cshtml",
+              "RelativeDocumentMoniker": "ProjectManagment\\Views\\Project\\ProjectUsersPartial.cshtml",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Project\\ProjectUsersPartial.cshtml",
+              "RelativeToolTip": "ProjectManagment\\Views\\Project\\ProjectUsersPartial.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwBMAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T05:13:29.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Project\\Details.cshtml",
+              "RelativeDocumentMoniker": "ProjectManagment\\Views\\Project\\Details.cshtml",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Project\\Details.cshtml",
+              "RelativeToolTip": "ProjectManagment\\Views\\Project\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T04:49:39.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ProjectController.cs",
               "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Controllers\\ProjectController.cs",
               "RelativeDocumentMoniker": "ProjectManagment\\Controllers\\ProjectController.cs",
               "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Controllers\\ProjectController.cs",
               "RelativeToolTip": "ProjectManagment\\Controllers\\ProjectController.cs",
-              "ViewState": "AQIAAIsAAAAAAAAAAAAYwKsAAAAzAAAA",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAiwM0AAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-18T06:33:26.24Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "c96d1b9e-f252-424a-b629-6c49c362cd67",
-        "Display": 1,
-        "X": 724,
-        "Y": 279,
-        "Width": 1494,
-        "Height": 777,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Shared\\Components\\InviteUser\\Default.cshtml",
-              "RelativeDocumentMoniker": "ProjectManagment\\Views\\Shared\\Components\\InviteUser\\Default.cshtml",
-              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Shared\\Components\\InviteUser\\Default.cshtml",
-              "RelativeToolTip": "ProjectManagment\\Views\\Shared\\Components\\InviteUser\\Default.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-18T06:34:48.689Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Shared\\Components\\DeleteTask\\Default.cshtml",
-              "RelativeDocumentMoniker": "ProjectManagment\\Views\\Shared\\Components\\DeleteTask\\Default.cshtml",
-              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Shared\\Components\\DeleteTask\\Default.cshtml",
-              "RelativeToolTip": "ProjectManagment\\Views\\Shared\\Components\\DeleteTask\\Default.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-18T06:34:55.918Z",
               "EditorCaption": ""
             }
           ]

@@ -151,6 +151,10 @@ namespace ProjectManagment.Controllers
                 .Include(p => p.TaskModels)
                 .Include(p => p.ProjectUsers).ThenInclude(pu => pu.User)
                 .FirstOrDefaultAsync(m => m.Id == id);
+
+            var userId = userManager.GetUserId(User);
+            var userRole = project.ProjectUsers.FirstOrDefault(pu => pu.UserId == userId)?.Role;
+            ViewBag.UserRole = userRole;
             return View(project);
         }
         [HttpGet]
@@ -180,6 +184,26 @@ namespace ProjectManagment.Controllers
             context.ProjectUsers.Add(projectUser);
             await context.SaveChangesAsync();
             return View("Index");
+        }
+        [HttpPost]
+        public async Task<IActionResult> ChangeUserRole(int projectId, string userId, ProjectRole role)
+        {
+            var project = await GetProjectIfUserHasAccess(projectId);
+            if (project == null || !IsUserOwner(project))
+            {
+                return Forbid();
+            }
+            var user = project.ProjectUsers.FirstOrDefault(pu => pu.UserId == userId);
+            if (user != null) 
+            {
+                user.Role = role;
+                await context.SaveChangesAsync();
+            }
+            else 
+            {
+                return NotFound(); 
+            }
+            return RedirectToAction("Details", new { id = projectId });
         }
 
         private bool ProjectExists(int id)

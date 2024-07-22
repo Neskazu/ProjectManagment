@@ -34,6 +34,10 @@
         }
     </tbody>
 </table>
+<h3>Users</h3>
+<div id="projectUsersContainer">
+    @await Html.PartialAsync("~/Views/Project/ProjectUsersPartial.cshtml", Model)
+</div>
 
 <h4>Add New Task</h4>
 <hr />
