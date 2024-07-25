@@ -14,7 +14,7 @@
     <tbody>
         @foreach (var user in Model.ProjectUsers)
         {
-            <tr>
+            <tr draggable="true" class="user-item" data-user-id="@user.UserId">
                 <td>@user.User.Email</td>
                 <td>
                     <form asp-action="ChangeUserRole" method="post" class="form-inline">

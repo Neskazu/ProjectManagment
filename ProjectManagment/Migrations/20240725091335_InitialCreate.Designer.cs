@@ -12,7 +12,7 @@ using ProjectManagment.Data;
 namespace ProjectManagment.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240717062631_InitialCreate")]
+    [Migration("20240725091335_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -172,10 +172,7 @@ namespace ProjectManagment.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<int>("TaskId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("TaskModelsId")
+                    b.Property<int>("TaskModelId")
                         .HasColumnType("integer");
 
                     b.Property<string>("UserId")
@@ -184,7 +181,7 @@ namespace ProjectManagment.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("TaskModelsId");
+                    b.HasIndex("TaskModelId");
 
                     b.HasIndex("UserId");
 
@@ -403,7 +400,7 @@ namespace ProjectManagment.Migrations
                 {
                     b.HasOne("ProjectManagment.Models.TaskModel", "TaskModels")
                         .WithMany("Comments")
-                        .HasForeignKey("TaskModelsId")
+                        .HasForeignKey("TaskModelId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

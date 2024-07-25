@@ -1,0 +1,19 @@
+﻿@model ProjectManagment.Models.TaskModel
+
+<div class="comments-content">
+    <div id="commentsContainer" class="comments-container">
+        <h4>Comments</h4>
+        @foreach (var comment in Model.Comments)
+        {
+            <div class="comment">
+                <p><strong>@comment.User?.UserName</strong> (@comment.CreatedAt.ToString("g")):</p>
+                <p>@comment.Content</p>
+            </div>
+        }
+    </div>
+    <div class="add-comment">
+        <textarea id="newCommentContent" placeholder="Add a comment..." rows="3"></textarea>
+        <button onclick="addComment(@Model.Id)" class="btn btn-primary">Submit</button>
+    </div>
+</div>
+<button class="btn btn-secondary close-comments" onclick="closeComments()">Close</button>

@@ -239,8 +239,7 @@ namespace ProjectManagment.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Content = table.Column<string>(type: "text", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    TaskId = table.Column<int>(type: "integer", nullable: false),
-                    TaskModelsId = table.Column<int>(type: "integer", nullable: false),
+                    TaskModelId = table.Column<int>(type: "integer", nullable: false),
                     UserId = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
@@ -253,8 +252,8 @@ namespace ProjectManagment.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Comments_TaskModels_TaskModelsId",
-                        column: x => x.TaskModelsId,
+                        name: "FK_Comments_TaskModels_TaskModelId",
+                        column: x => x.TaskModelId,
                         principalTable: "TaskModels",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -322,9 +321,9 @@ namespace ProjectManagment.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Comments_TaskModelsId",
+                name: "IX_Comments_TaskModelId",
                 table: "Comments",
-                column: "TaskModelsId");
+                column: "TaskModelId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Comments_UserId",

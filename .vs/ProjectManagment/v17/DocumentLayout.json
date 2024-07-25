@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "F:\\Repo\\ProjectManagment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\views\\project\\projectuserspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\views\\project\\projectuserspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\views\\task\\commentspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\views\\task\\commentspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\views\\project\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\views\\project\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|f:\\repo\\projectmanagment\\projectmanagment\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D47479-AA6D-4202-9D6B-111A9EB34993}|ProjectManagment\\ProjectManagment.csproj|solutionrelative:projectmanagment\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,41 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProjectUsersPartial.cshtml",
-              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Project\\ProjectUsersPartial.cshtml",
-              "RelativeDocumentMoniker": "ProjectManagment\\Views\\Project\\ProjectUsersPartial.cshtml",
-              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Project\\ProjectUsersPartial.cshtml",
-              "RelativeToolTip": "ProjectManagment\\Views\\Project\\ProjectUsersPartial.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAqwBMAAAA0AAAA",
+              "DocumentIndex": 0,
+              "Title": "CommentsPartial.cshtml",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Task\\CommentsPartial.cshtml",
+              "RelativeDocumentMoniker": "ProjectManagment\\Views\\Task\\CommentsPartial.cshtml",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Task\\CommentsPartial.cshtml",
+              "RelativeToolTip": "ProjectManagment\\Views\\Task\\CommentsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-22T05:13:29.29Z",
+              "WhenOpened": "2024-07-25T08:12:24.054Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Details.cshtml",
               "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Project\\Details.cshtml",
               "RelativeDocumentMoniker": "ProjectManagment\\Views\\Project\\Details.cshtml",
               "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Views\\Project\\Details.cshtml",
               "RelativeToolTip": "ProjectManagment\\Views\\Project\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAvAAAA",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAF0AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-22T04:49:39.997Z",
+              "WhenOpened": "2024-07-25T08:16:23.309Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProjectController.cs",
-              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Controllers\\ProjectController.cs",
-              "RelativeDocumentMoniker": "ProjectManagment\\Controllers\\ProjectController.cs",
-              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Controllers\\ProjectController.cs",
-              "RelativeToolTip": "ProjectManagment\\Controllers\\ProjectController.cs",
-              "ViewState": "AQIAAKsAAAAAAAAAAAAiwM0AAABHAAAA",
+              "DocumentIndex": 2,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "ProjectManagment\\Controllers\\TaskController.cs",
+              "ToolTip": "F:\\Repo\\ProjectManagment\\ProjectManagment\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "ProjectManagment\\Controllers\\TaskController.cs",
+              "ViewState": "AQIAAJEAAAAAAAAAAAAAwKQAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T06:33:26.24Z",
+              "WhenOpened": "2024-07-23T11:42:38.024Z",
               "EditorCaption": ""
             }
           ]

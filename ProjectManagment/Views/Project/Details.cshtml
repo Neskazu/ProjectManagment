@@ -7,33 +7,41 @@
 <h2>@Model.Name</h2>
 <p>@Model.Description</p>
 
-<h3>Tasks</h3>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Deadline</th>
-            <th>Status</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var task in Model.TaskModels)
-        {
-            <tr>
-                <td>@task.Title</td>
-                <td>@task.Description</td>
-                <td>@task.Deadline</td>
-                <td>@task.Status</td>
-                <td>
-                    <a asp-controller="Task" asp-action="Edit" asp-route-id="@task.Id" class="btn btn-info">Edit</a> 
-                    <button class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" data-task-id="@task.Id" data-task-title="@task.Title">Delete</button>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+<div class="row">
+    <div class="col-md-8">
+        <h3>Tasks</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Deadline</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var task in Model.TaskModels)
+                {
+                    <tr class="task-item" data-task-id="@task.Id" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <td>@task.Title</td>
+                        <td>@task.Description</td>
+                        <td>@task.Deadline</td>
+                        <td>@task.Status</td>
+                        <td>
+                            <a asp-controller="Task" asp-action="Edit" asp-route-id="@task.Id" class="btn btn-info">Edit</a>
+                            <button class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" data-task-id="@task.Id" data-task-title="@task.Title">Delete</button>
+                            <button class="btn btn-primary" onclick="showComments(@task.Id)">Comments</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div id="commentsPanel" class="comments-panel">
+        @await Html.PartialAsync("~/Views/Task/CommentsPartial.cshtml", new ProjectManagment.Models.TaskModel { ProjectId = Model.Id }) 
+</div>
+
 <h3>Users</h3>
 <div id="projectUsersContainer">
     @await Html.PartialAsync("~/Views/Project/ProjectUsersPartial.cshtml", Model)
@@ -56,9 +64,103 @@
     @await Component.InvokeAsync("DeleteTask", new { taskId = 0, taskTitle = "" })
 </div>
 
+
 @section Scripts {
     @{
         <script>
+            function closeComments() {
+                $('#commentsPanel').removeClass('show');
+                $('#commentsContainer').html('');
+                $('#newCommentContent').val('');
+            }
+                function showComments(taskId) {
+                    $.ajax({
+                        url: '/Task/GetComments',
+                        type: 'GET',
+                        data: { taskId: taskId },
+                        success: function (result) {
+                            $('#commentsPanel').html(result);
+                            $('#commentsPanel').addClass('show');
+                        }
+                    });
+                }
+
+            function addComment(taskId) {
+                var content = $('#newCommentContent').val();
+                $.ajax({
+                    url: '/Task/AddComment',
+                    type: 'POST',
+                    data: {
+                        taskId: taskId,
+                        content: content,
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            showComments(taskId); // Перезагрузка комментариев после добавления
+                        } else {
+                            alert(response.message);
+                        }
+                    }
+                });
+            }
+            function allowDrop(event) {
+                event.preventDefault();
+            }
+
+            function drag(event) {
+                event.dataTransfer.setData("text", event.target.getAttribute("data-user-id"));
+            }
+
+            function drop(event) {
+                event.preventDefault();
+                var userId = event.dataTransfer.getData("text");
+                var taskId = event.target.closest('.task-item').getAttribute("data-task-id");
+                console.log("Dropping user with ID:", userId);
+                console.log("On task with ID:", taskId);
+
+                // Проверка на правильность полученных данных
+                if (!userId || !taskId) {
+                    console.error('Invalid user or task ID');
+                    return;
+                }
+
+                // Отправка данных на сервер
+                $.ajax({
+                    url: '/Task/AssignUser',
+                    type: 'POST',
+                    data: {
+                        taskId: taskId,
+                        userId: userId,
+                        __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val() // анти-CSRF токен
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            location.reload(); // обновление страницы для отображения изменений
+                        } else {
+                            alert(response.message); // показ сообщения об ошибке
+                            console.error('Assignment failed:', response.message);
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Assignment failed:', error);
+                    }
+                });
+            }
+
+            $(document).ready(function () {
+                var userItems = document.querySelectorAll('.user-item');
+                userItems.forEach(function (item) {
+                    item.setAttribute("draggable", "true");
+                    item.addEventListener('dragstart', drag);
+                });
+
+                var taskItems = document.querySelectorAll('.task-item');
+                taskItems.forEach(function (item) {
+                    item.addEventListener('dragover', allowDrop);
+                    item.addEventListener('drop', drop);
+                });
+            });
+
             $(document).ready(function () {
                 $('.btn-danger').click(function (event) {
                     var button = $(this);
@@ -85,4 +187,51 @@
 
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+    <style>
+        .comments-panel {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 400px;
+            height: 100%;
+            background-color: #f9f9f9;
+            border-left: 1px solid #ddd;
+            padding: 15px;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+            transition: right 0.3s ease;
+            overflow-y: auto;
+        }
+
+            .comments-panel.show {
+                right: 0;
+            }
+
+        .comments-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .comments-container {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .add-comment {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+        }
+
+            .add-comment textarea {
+                width: 100%;
+                resize: none;
+            }
+
+        .close-comments {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
 }

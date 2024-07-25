@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProjectManagment.Data;
 using ProjectManagment.Models;
@@ -9,9 +10,11 @@ namespace ProjectManagment.Controllers
     public class TaskController : Controller
     {
         private readonly ApplicationDbContext context;
-        public TaskController(ApplicationDbContext context)
+        private readonly UserManager<UserModel> userManager;
+        public TaskController(ApplicationDbContext context, UserManager<UserModel> userManager)
         {
             this.context = context;
+            this.userManager = userManager;
         }
         public IActionResult Index()
         {
@@ -34,6 +37,7 @@ namespace ProjectManagment.Controllers
             }
             return View(task);
         }
+        //Create Task and log errors 
         [HttpPost]
         public async Task<IActionResult> Create([Bind("Title,Description,Deadline,Status,ProjectId")] TaskModel task)
         {
@@ -50,7 +54,6 @@ namespace ProjectManagment.Controllers
                 {
                     foreach (var error in modelState.Errors)
                     {
-                        // You can use your preferred logging mechanism here.
                         Console.WriteLine(error.ErrorMessage);
                     }
                 }
@@ -103,6 +106,30 @@ namespace ProjectManagment.Controllers
             }
             return View(task);
         }
+        [HttpPost]
+        public async Task<IActionResult> AssignUser(int taskId, string userId)
+        {
+            // Проверка на существование пользователя в задаче
+            var existingAssignment = await context.TaskUsers
+                .FirstOrDefaultAsync(tu => tu.TaskId == taskId && tu.UserId == userId);
+
+            if (existingAssignment != null)
+            {
+                return Json(new { success = false, message = "User is already assigned to this task." });
+            }
+
+            
+            var taskUser = new TaskUser
+            {
+                TaskId = taskId,
+                UserId = userId
+            };
+
+            context.TaskUsers.Add(taskUser);
+            await context.SaveChangesAsync();
+
+            return Json(new { success = true });
+        }
         [HttpGet]
         public IActionResult DeleteTaskModal(int taskId, string taskTitle)
         {
@@ -119,6 +146,39 @@ namespace ProjectManagment.Controllers
                 await context.SaveChangesAsync();
             }
             return RedirectToAction("Details", "Project", new { id = task?.ProjectId });
+        }
+        //Comments section
+        [HttpPost]
+        public async Task<IActionResult> AddComment(int taskId, string Content)
+        {
+            var userId = userManager.GetUserId(User);
+            var comment = new CommentModel
+            { 
+                Content = Content,
+                TaskModelId = taskId,
+                UserId = userId,
+                CreatedAt = DateTime.UtcNow,
+            };
+            Console.WriteLine(comment);
+            Console.WriteLine(userId + "UserId");
+            context.Comments.Add(comment);
+            await context.SaveChangesAsync();
+            return Json(new { success = true });
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetComments(int taskId)
+        {
+            var task = await context.TaskModels
+                .Include(t => t.Comments)
+                .ThenInclude(c => c.User)
+                .FirstOrDefaultAsync(t => t.Id == taskId);
+
+            if (task == null)
+            {
+                return NotFound();
+            }
+
+            return PartialView("CommentsPartial", task);
         }
         private bool TaskExist(int id)
         {
