@@ -20,30 +20,30 @@
                     <form asp-action="ChangeUserRole" method="post" class="form-inline">
                         <input type="hidden" name="projectId" value="@Model.Id" />
                         <input type="hidden" name="userId" value="@user.UserId" />
-                        @if (currentUserRole == ProjectRole.Owner)
+                        @if (currentUserRole == ProjectRole.Owner && user.Role != ProjectRole.Owner)
                         {
-                        <select class="form-control" name="role">
-                            
+                            <select class="form-control" name="role">
                                 @foreach (var role in Enum.GetValues(typeof(ProjectRole)).Cast<ProjectRole>())
                                 {
-                                    @if (user.Role == role)
+                                    @if (role != ProjectRole.Owner)
                                     {
-                                        <option value="@role" selected="selected">@role</option>
-                                    }
-                                    else
-                                    {
-                                        <option value="@role">@role</option>
+                                        @if (user.Role == role)
+                                        {
+                                            <option value="@role" selected="selected">@role</option>
+                                        }
+                                        else
+                                        {
+                                            <option value="@role">@role</option>
+                                        }
                                     }
                                 }
-                            
-                        </select>
+                            </select>
                             <button type="submit" class="btn btn-success ml-2">Save</button>
                         }
                         else
                         {
                             @user.Role
                         }
-                        
                     </form>
                 </td>
             </tr>

@@ -1,3 +1,22 @@
+/*theme setting colors etc*/
+:root {
+    --background-color: white;
+    --text-color: black;
+    --link-color: blue;
+    --header-background-color: lightgray;
+    --select-background-color: #ececec;
+    --select-text-color: #333;
+}
+
+.dark-theme {
+    --background-color: #4e5257;
+    --text-color: #e0e0e0;
+    --link-color: #d9d7dd;
+    --header-background-color: #1f1f1f;
+    --select-background-color: #515152;
+    --select-text-color: #ccc;
+}
+
 html {
   font-size: 14px;
 }
@@ -18,8 +37,110 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+a {
+    color: var(--link-color);
+}
+a.nav-link {
+    color: var(--link-color);
+}
+
+a.nav-link:hover {
+    color: var(--link-hover-color);
+}
+button.btn-link {
+    color: var(--link-color);
+}
+
+button.btn-link:hover {
+    color: var(--link-hover-color);
+}
+div {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+nav {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+td {
+    color: var(--text-color);
+}
+}
+tr {
+    color: var(--text-color);
+}
+th {
+    color: var(--text-color);
+}
+select.form-control {
+    background-color: var(--select-background-color);
+    color: var(--select-text-color);
+    border-color: var(--text-color);
+}
+
+select.form-control option {
+    background-color: var(--select-background-color);
+    color: var(--select-text-color);
+}
+    select.form-control:focus {
+        background-color: var(--select-background-color);
+        color: var(--select-text-color);
+        border-color: var(--text-color);
+    }
+}
+header {
+    background-color: var(--header-background-color);
 }
 footer{
     z-index:-1;
+}
+/*details*/
+.comments-panel {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100%;
+    background-color: #f9f9f9;
+    border-left: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+    overflow-y: auto;
+}
+
+.comments-panel.show {
+    right: 0;
+}
+
+.comments-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.comments-container {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.add-comment {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+    .add-comment textarea {
+        width: 100%;
+        resize: none;
+    }
+
+.close-comments {
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }

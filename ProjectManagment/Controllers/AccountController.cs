@@ -58,7 +58,7 @@ namespace ProjectManagment.Controllers
                 var result = await signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Project");
                 }
                 ModelState.AddModelError(string.Empty, "Invalid login attempt.");
             }
@@ -69,7 +69,7 @@ namespace ProjectManagment.Controllers
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Project");
         }
     }
 }

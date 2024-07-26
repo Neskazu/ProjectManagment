@@ -183,7 +183,7 @@ namespace ProjectManagment.Controllers
             };
             context.ProjectUsers.Add(projectUser);
             await context.SaveChangesAsync();
-            return View("Index");
+            return RedirectToAction("Index", "Project");
         }
         [HttpPost]
         public async Task<IActionResult> ChangeUserRole(int projectId, string userId, ProjectRole role)

@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "F:\\Repo\\ProjectManagment\\ProjectManagment\\wwwroot\\js\\ProjectDetails.js",
+      "PackagePath": "staticwebassets\\js\\ProjectDetails.js"
+    },
+    {
+      "Id": "F:\\Repo\\ProjectManagment\\ProjectManagment\\wwwroot\\js\\ProjectIndex.js",
+      "PackagePath": "staticwebassets\\js\\ProjectIndex.js"
+    },
+    {
+      "Id": "F:\\Repo\\ProjectManagment\\ProjectManagment\\wwwroot\\js\\Theme.js",
+      "PackagePath": "staticwebassets\\js\\Theme.js"
+    },
+    {
       "Id": "F:\\Repo\\ProjectManagment\\ProjectManagment\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
